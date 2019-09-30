@@ -1,11 +1,11 @@
-document.getElementById("addButton").addEventListener('click', calculateAverage)
+
 function calculateAverage()
 {
-    const firstNumber=Number(document.getElementById("firstNumber").value)
-    const secondNumber=Number(document.getElementById("secondNumber").value)
+    const firstNumber=parseInt(document.getElementById("firstNumber").value)
+    const secondNumber=parseInt(document.getElementById("secondNumber").value)
 
     const averageOfNumbers=(firstNumber*secondNumber);
 
-    document.getElementById("average").value = averageOfNumbers;
+    document.getElementById("average").innerHTML ="estimated space:"+averageOfNumbers;
     
 }

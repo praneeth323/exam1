@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Average of Numbers</title>
+  <title>Storage Space Estimator</title>
 
-  <meta name="description" content="Interactive app">
-  <meta name="author" content="Denise Case">
+  <meta name="description" content="exam app">
+  <meta name="author" content="Praneeth Reddy">
 
   <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
 
@@ -41,34 +41,31 @@
       <!--Rows have columns - column 1 (7/12) -->
       <div class="col-md-7 mb-4">
 
-        <h2>Average of Numbers</h2>
+        <h2>Storage Space Estimator</h2>
         <hr>
 
         <fieldset class="mt-4">
-          <label for="firstNumber">Enter first number (1 to 10000):</label>
+          <label for="firstNumber">Number of items (1 to 10000):</label>
           <input id="firstNumber" type="number" min="1" max="10000" value="" placeholder="0">
           <span id="firstWarning" class="text-danger"></span>
         </fieldset>
 
         <fieldset class="mt-4">
-          <label for="secondNumber">Enter second number (1 to 10000):</label>
+          <label for="secondNumber">size of each item(1 to 10000):</label>
           <input id="secondNumber" type="number" min="1" max="10000" value="" placeholder="0">
           <span id="secondWarning" class="text-danger"></span>
         </fieldset>
 
-        <fieldset class="mt-4">
-          <label for="thirdNumber">Enter third number (1 to 10000):</label>
-          <input id="thirdNumber" type="number" min="1" max="10000" value="" placeholder="0">
-          <span id="thirdWarning" class="text-danger"></span>
-        </fieldset>
+
 
         <fieldset class="mt-4">
-          <label for="average">Average of three numbers:</label>
-          <input id="average" type="number" min="1" max="10000" value="" placeholder="0.00" size="4">
+          <label for="average">Estimated space:</label>
+          <input id="average" type="number" min="1" max="10000" value="" placeholder="0.00" size="8">
           <span id="average" class="text-danger"></span>
-        </fieldset>
+        </fieldset> 
 
-        <button id="addButton" class="btn btn-primary">Calculate Average</button>
+        <button id="addButton" class="btn btn-primary">Estimated Space</button>
+        <!-- <p>id="average"</p> 1-->
 
       </div>
       <!--end column 1-->
@@ -80,7 +77,7 @@
 
   <!-- sticky footer with padding on y-axis (top and bottom) -->
   <footer class="footer mt-auto py-3 bg-light">
-    &COPY; SaiPrasad Bobbilla
+    &COPY; Praneeth Reddy
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -91,4 +88,4 @@
 
 </body>
 
-</html>s
+</html>
